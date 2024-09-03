@@ -55,24 +55,24 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="ComissionCalculator.cs" />
-    <Compile Include="ExistingSellerWindow.xaml.cs">
+    <Compile Include="Core\Services\ComissionCalculator.cs" />
+    <Compile Include="Core\Windows\ExistingSellerWindow.xaml.cs">
       <DependentUpon>ExistingSellerWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Field.cs" />
-    <Compile Include="NewSellerWindow.xaml.cs">
+    <Compile Include="Core\Classes\Field.cs" />
+    <Compile Include="Core\Windows\NewSellerWindow.xaml.cs">
       <DependentUpon>NewSellerWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PayList.xaml.cs">
+    <Compile Include="Core\Windows\PayList.xaml.cs">
       <DependentUpon>PayList.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Seller.cs" />
-    <Compile Include="AppContext.cs" />
-    <Compile Include="SellerTypeChoiceDialog.xaml.cs">
+    <Compile Include="Core\Classes\Seller.cs" />
+    <Compile Include="Core\Services\AppContext.cs" />
+    <Compile Include="Core\Windows\SellerTypeChoiceDialog.xaml.cs">
       <DependentUpon>SellerTypeChoiceDialog.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Validator.cs" />
-    <Page Include="ExistingSellerWindow.xaml">
+    <Compile Include="Core\Services\Validator.cs" />
+    <Page Include="Core\Windows\ExistingSellerWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -88,15 +88,15 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="NewSellerWindow.xaml">
+    <Page Include="Core\Windows\NewSellerWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="PayList.xaml">
+    <Page Include="Core\Windows\PayList.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="SellerTypeChoiceDialog.xaml">
+    <Page Include="Core\Windows\SellerTypeChoiceDialog.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
