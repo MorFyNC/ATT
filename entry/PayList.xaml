@@ -1,0 +1,22 @@
+﻿<Window x:Class="entry.PayList"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:entry"
+        mc:Ignorable="d"
+        Title="PayList" Height="450" Width="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold">ООО "АвтоШинТех" – Расчетный лист</TextBlock>
+        <ListView x:Name="PayListLV" Margin="25">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="ФИО Продавца" DisplayMemberBinding="{Binding Fullname}"></GridViewColumn>
+                    <GridViewColumn Header="Размер комиссионного вознаграждения, руб." DisplayMemberBinding="{Binding Comission}"></GridViewColumn>
+                    <GridViewColumn Header="Размер дневной выручки, руб." DisplayMemberBinding="{Binding DailyEarnings}"></GridViewColumn>
+                    <GridViewColumn Header="Стаж работы в организации, лет" DisplayMemberBinding="{Binding Experience}"></GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>

@@ -1,0 +1,30 @@
+﻿<Window x:Class="entry.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:entry"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="300" Width="450">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label x:Name="SellerLbl" Grid.Row="0" Content="Продавец: "></Label>
+            <Button Grid.Row="0" Click="SellerSelectButton_OnClick">Выбрать продавца</Button>
+        </StackPanel>
+        <StackPanel Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock x:Name="EarningsTB" Grid.Row="1" Text="Введите дневную выручку продавца" TextWrapping="Wrap" TextAlignment="Center"></TextBlock>
+            <TextBox x:Name="DailySallary" Grid.Row="1"></TextBox>
+        </StackPanel>
+            
+        <Button x:Name="Calculate" Margin="25 30 25 30" Grid.Row="2" Grid.Column="0" Click="Calculate_Click">Рассчитать комиссионные</Button>
+        <Button x:Name="ShowPayList" Margin="25 30 25 30" Grid.Row="2" Grid.Column="1" Click="ShowPayList_Click">Показать рассчетный лист</Button>
+    </Grid>
+</Window>
