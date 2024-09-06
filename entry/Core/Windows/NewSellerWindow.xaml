@@ -18,7 +18,7 @@
         </Grid.RowDefinitions>
         <TextBlock Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20 20 0 0" Text="Введите полное имя продавца"></TextBlock>
         <TextBox x:Name="SellerFullname" Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20 40 0 0" Width="200"></TextBox>
-        <TextBlock Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20 60 0 0" Text="Введите полное имя продавца"></TextBlock>
+        <TextBlock Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20 60 0 0" Text="Введите дату принятия на работу"></TextBlock>
         <DatePicker x:Name="AppliementDate" Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20 80 0 0" Width="200"></DatePicker>
         <Button x:Name="Ok" Grid.Row="1" Grid.Column="0" Content="Ок" Margin="20 10 20 10" Click="Ok_Click"></Button>
         <Button x:Name="Cancel" Grid.Row="1" Grid.Column="1" Content="Отмена" Margin="20 10 20 10" Click="Cancel_Click"></Button>
