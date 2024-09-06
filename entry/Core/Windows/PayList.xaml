@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:entry"
         mc:Ignorable="d"
-        Title="PayList" Height="450" Width="800">
+        Title="PayList" Height="450" Width="800"
+        WindowStartupLocation="CenterOwner">
     <Grid>
         <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold">ООО "АвтоШинТех" – Расчетный лист</TextBlock>
         <ListView x:Name="PayListLV" Margin="25">
